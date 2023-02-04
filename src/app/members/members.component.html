@@ -1,0 +1,17 @@
+<div fxLayout="column" fxLayoutGap="20px">
+    <h1>Members</h1>
+    <mat-card class="transparent-card">
+      <img mat-card-image src="assets/img/DSC04458.jpg"
+        alt="Photo of the Greenbelt Concert Band" style="object-fit: cover; max-height: 300px">
+      <mat-card-subtitle class="mat-caption" fxLayoutAlign="center">
+      </mat-card-subtitle>
+    </mat-card>
+    <div fxLayout="row wrap" fxLayout.lt-md="column" >
+      <div fxFlex="33" *ngFor="let column of objectKeys(membersList)">
+          <ul *ngFor="let obj of membersList[column]">
+            <h2>{{obj.section}}</h2>
+            <div *ngFor="let person of obj.members" class="list-small">{{person}}</div>
+          </ul>
+      </div>
+    </div>
+</div>

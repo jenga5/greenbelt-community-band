@@ -1,0 +1,57 @@
+<div fxLayout="column" fxLayoutGap="20px">
+    <h1>Affiliated Groups</h1>
+    <br/>
+    <h3>The Wind Ensemble of the Greenbelt Concert Band</h3>    
+    <mat-card class="transparent-card">
+        <img mat-card-image src="assets/img/wind_ensemble.png"
+        alt="Photo of The Wind Ensemble of the Greenbelt Concert Band" style="object-fit: cover; max-height: 300px">
+        <mat-card-subtitle class="mat-caption" fxLayoutAlign="center">
+            The Wind Ensemble
+        </mat-card-subtitle>
+    </mat-card>
+    <p>The Greenbelt Wind Ensemble is an off-shoot of the Greenbelt Concert Band. 
+        The ensemble performs concerts in the City of Greenbelt and surrounding areas on special occasions.
+    </p>
+    <p>
+        The Wind Ensemble rehearses every Tuesday afternoon in the "Multi-Purpose Room" 
+        in the Greenbelt Community Center in Greenbelt, Maryland. The ensemble is open to all those with playing experience.
+    </p>
+    <h2 style="text-align:center">Members</h2>    
+    <div fxLayout="row wrap">
+        <div fxFlex="50" *ngFor="let column of objectKeys(windEnsembleList)" style="text-align:center">
+            <ul *ngFor="let obj of windEnsembleList[column]">
+                <h2>{{obj.section}}</h2>
+                <div *ngFor="let person of obj.members" class="list-small">{{person}}</div>
+            </ul>
+        </div>
+    </div>
+
+    <br/>
+    <h3>Saxophone Quartet</h3>    
+    <mat-card class="transparent-card">
+        <img mat-card-image src="assets/img/saxophone_quartet.png"
+        alt="Photo of Saxophone Quartet" style="object-fit: cover; max-height: 300px">
+        <mat-card-subtitle class="mat-caption" fxLayoutAlign="center">
+        </mat-card-subtitle>
+    </mat-card>
+
+
+    <br/>
+    <h3>Brass Ensemble</h3>    
+    <mat-card class="transparent-card">
+        <img mat-card-image src="assets/img/brass_ensemble.png"
+        alt="Photo of Brass Ensemble" style="object-fit: cover; max-height: 300px">
+        <mat-card-subtitle class="mat-caption" fxLayoutAlign="center">
+            
+        </mat-card-subtitle>
+    </mat-card>
+    <h2 style="text-align:center">Members</h2>    
+    <div fxLayout="row wrap">
+        <div fxFlex="50" *ngFor="let column of objectKeys(brassEnsembleList)" style="text-align:center">
+            <ul *ngFor="let obj of brassEnsembleList[column]">
+                <h2>{{obj.section}}</h2>
+                <div *ngFor="let person of obj.members" class="list-small">{{person}}</div>
+            </ul>
+        </div>
+    </div>
+</div>

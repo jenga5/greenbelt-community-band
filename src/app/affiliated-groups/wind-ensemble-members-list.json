@@ -1,0 +1,67 @@
+[
+    [
+      {
+        "section": "Flute",
+        "members": [
+          "A Brenner"
+        ]
+      },
+      {
+        "section": "Clarinet",
+        "members": [
+          "A Kreisle",
+          "P Quillen",
+          "E Zimet"
+        ]
+      },
+      {
+        "section": "Bass Clarinet",
+        "members": [
+          "D Lewis"
+        ]
+      },
+      {
+        "section": "Bassoon",
+        "members": [
+          "J Culpepper"
+        ]
+      },
+      {
+        "section": "Saxophone",
+        "members": [
+          "C Cherrix",
+          "T Cherrix",
+          "J Lozier"
+        ]
+      }
+    ],
+    [
+      {
+        "section": "Trumpet",
+        "members": [
+          "C Anstine",
+          "K Hills",
+          "E Smith"
+        ]
+      },
+      {
+        "section": "Baritone",
+        "members": [
+          "R Virta"
+        ]
+      },
+      {
+        "section": "Tuba",
+        "members": [
+          "N Cary"
+        ]
+      },
+      {
+        "section": "Percussion",
+        "members": [
+          "K Bartolomeo",
+          "E Nivera"
+        ]
+      }
+    ]
+  ]
